@@ -1,8 +1,208 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Questrial&family=Roboto:wght@100;500&display=swap");
 * {
+  list-style: none;
   font-size: 14px;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
   color: white;
+  border: none;
+  background-color: #1a73e8;
+  border-radius: 8px;
+  width: 80px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+button:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+button:hover {
+  background-color: cornflowerblue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 3vh;
+  bottom: 0%;
+  text-align: center;
+}
+
+footer i {
+  -webkit-animation: motion 1s infinite ease-in-out;
+          animation: motion 1s infinite ease-in-out;
+  position: absolute;
+  top: -200%;
+  font-size: 2rem;
+  color: black;
+}
+
+.inmagoLogo {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  width: 7vw;
+  -webkit-animation: spinIcon 15s infinite ease-in-out;
+          animation: spinIcon 15s infinite ease-in-out;
+}
+
+a {
+  color: black;
+}
+
+.container .bar {
+  position: fixed;
+  padding: 1rem 0;
+  height: 5vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .bar .left {
+  font-family: "Questrial", sans-serif;
+  font-size: 2.8rem;
+}
+
+.container .bar .left h1 {
+  cursor: pointer;
+}
+
+.container .bar .right {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.container .bar .right a {
+  color: white;
+}
+
+.container .bar .right i {
+  cursor: pointer;
+}
+
+.container .lottie-flying {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  bottom: 0%;
+  right: 2%;
+  width: 100vw;
+  position: absolute;
+  -webkit-animation: motion 4s ease-in-out infinite;
+          animation: motion 4s ease-in-out infinite;
+}
+
+.container .greeting {
+  font-family: "Noto Sans KR", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.container .greeting .title {
+  font-family: "Questrial", sans-serif;
+  margin-bottom: 0.6rem;
+  font-size: 4vw;
+}
+
+.container .greeting .title span {
+  font-weight: 500;
+  font-size: 5vw;
+  color: gray;
+}
+
+.container .greeting .desc {
+  font-size: 1.4vw;
+  margin-bottom: 2.2vw;
+}
+
+.container .greeting button {
+  width: 6.5vw;
+  height: 3.5vw;
+  font-size: 1.2vw;
+}
+
+@-webkit-keyframes motion {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes motion {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes spinIcon {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes spinIcon {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

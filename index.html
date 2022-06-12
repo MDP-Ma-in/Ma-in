@@ -8,13 +8,56 @@
         <link rel="stylesheet" href="/FE/CSS/reset.css">
         <link rel="stylesheet" href="/FE/CSS/main.css">
         <link rel="shortcut icon" href="/FE/assets/mainicon.ico" type="image/x-icon">
+
     </head>
     <body>
-        <script src="./FE/JS/three.min.js"></script>
         <script src="https://kit.fontawesome.com/03ededf5ff.js" crossorigin="anonymous"></script>
-       <div class="container">
-           <nav class="bar"></nav>
-           <section class="title"></section>
-       </div>
+        <div class="container">
+            <nav class="bar">
+                <div class="left">
+                    <h1>
+                        <a href="#">M<span style="color: #1a73e8;">a</span>:in</a>
+                    </h1>
+                </div>
+                <ul class="right">
+                    <li>
+                        <button onclick="location.href = './FE/Pages/login.html'">Sign in</button>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lottie-flying">
+                <lottie-player
+                    src="https://assets1.lottiefiles.com/packages/lf20_oojuetow.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 40rem; height: 45rem;"
+                    loop="loop"
+                    autoplay="autoplay"></lottie-player>
+                <lottie-player
+                    src="https://assets2.lottiefiles.com/packages/lf20_gjtpn03m.json"
+                    background="transparent"
+                    speed="2"
+                    style="width: 40rem; height: 45rem;"
+                    loop="loop"
+                    autoplay="autoplay"></lottie-player>
+            </div>
+
+            <div class="greeting">
+                <h1 class="title">
+                    <span>Look</span>
+                    around you.</h1>
+                <p class="desc">We can always meet. If you use <span style="font-family: 'Questrial', sans-serif;">M<span style="color: #1a73e8;">a</span>:in.</span></p>
+                <button>Try it</button>
+            </div>
+            <footer>
+                <i class="fa-solid fa-arrow-down"></i>
+            </footer>
+        </div>
+        <script
+            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </body>
 </html>
