@@ -32,34 +32,44 @@
                 </ul>
             </nav>
 
-            <div class="lottie-flying">
+            <section class="lottie-flying">
                 <lottie-player
                     src="https://assets1.lottiefiles.com/packages/lf20_oojuetow.json"
                     background="transparent"
                     speed="1"
-                    style="width: 40rem; height: 45rem;"
+                    style="width: 35vw; height: 50vh;"
                     loop="loop"
                     autoplay="autoplay"></lottie-player>
                 <lottie-player
                     src="https://assets2.lottiefiles.com/packages/lf20_gjtpn03m.json"
                     background="transparent"
                     speed="2"
-                    style="width: 40rem; height: 45rem;"
+                    style="width: 30vw; height: 45vh;"
                     loop="loop"
                     autoplay="autoplay"></lottie-player>
-            </div>
+            </section>
 
-            <div class="greeting">
+            <section class="greeting">
                 <h1 class="title">
                     <span>Look</span>
                     around you.</h1>
                 <p class="desc">We can always meet. If you use <span style="font-family: 'Questrial', sans-serif;">M<span style="color: #1a73e8;">a</span>:in.</span></p>
                 <button class="greeting-btn sign" onclick="modalOnOff();">Try it</button>
-            </div>
-            <footer>
-                <i class="fa-solid fa-arrow-down"></i>
-            </footer>
+            </section>
         </div>
+
+        <form class="sign-in">
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            <h1>Sign:in</h1>
+            <input class="input_form" type="text" autofocus placeholder="username"/>
+            <input class="input_form" type="password" placeholder="password"/>
+            <a href="#">forgot password?</a>        
+            <button type="submit">Login</button>
+        </form>
+        <form class="sign-up hidden">
+
+        </form>
+
         <script
             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <script src="./FE/JS/app.js"></script>

@@ -33,30 +33,12 @@ button:hover {
   transition: 0.4s;
 }
 
-footer {
-  position: absolute;
-  background-color: black;
-  width: 100vw;
-  height: 3vh;
-  bottom: 0%;
-  text-align: center;
-}
-
-footer i {
-  -webkit-animation: motion 1s infinite ease-in-out;
-          animation: motion 1s infinite ease-in-out;
-  position: absolute;
-  top: -200%;
-  font-size: 2rem;
-  color: black;
+a {
+  color: cornflowerblue;
 }
 
 .hidden {
-  display: hidden;
-}
-
-a {
-  color: black;
+  display: none;
 }
 
 .blur {
@@ -81,12 +63,17 @@ a {
 }
 
 .container .bar .left {
+  color: black;
   font-family: "Questrial", sans-serif;
   font-size: 2.8rem;
 }
 
 .container .bar .left h1 {
   cursor: pointer;
+}
+
+.container .bar .left a {
+  color: black;
 }
 
 .container .bar .right {
@@ -172,15 +159,40 @@ a {
   font-size: 1.2vw;
 }
 
-.modal-signin {
+.sign-in {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: black;
-  width: 40vw;
+  background-color: yellow;
+  width: 45vh;
   height: 70vh;
+}
+
+.sign-in i {
+  top: -3%;
+  font-size: 3.2vw;
+  position: absolute;
+  right: -3%;
+}
+
+.sign-in h1 {
+  color: black;
 }
 
 @-webkit-keyframes motion {
@@ -202,28 +214,6 @@ a {
   50% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-  }
-}
-
-@-webkit-keyframes spinIcon {
-  0%, 100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-
-@keyframes spinIcon {
-  0%, 100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
