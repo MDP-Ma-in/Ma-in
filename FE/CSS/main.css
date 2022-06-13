@@ -55,18 +55,13 @@ footer i {
   display: hidden;
 }
 
-.inmagoLogo {
-  cursor: pointer;
-  position: absolute;
-  top: 30%;
-  right: 3%;
-  width: 7vw;
-  -webkit-animation: spinIcon 15s infinite ease-in-out;
-          animation: spinIcon 15s infinite ease-in-out;
-}
-
 a {
   color: black;
+}
+
+.blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 .container .bar {
@@ -118,7 +113,7 @@ a {
   height: auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 50%;
+  border-radius: 25%;
   background-color: #D3D3D3;
 }
 
@@ -171,10 +166,21 @@ a {
   margin-bottom: 2.2vw;
 }
 
-.container .greeting button {
+.container .greeting .greeting-btn {
   width: 6.5vw;
   height: 3.5vw;
   font-size: 1.2vw;
+}
+
+.modal-signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: black;
+  width: 40vw;
+  height: 70vh;
 }
 
 @-webkit-keyframes motion {
