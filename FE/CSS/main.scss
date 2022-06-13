@@ -24,9 +24,9 @@ button {
     border: none;
     background-color: #1a73e8;
     border-radius: 8px;
-    width: 80px;
-    height: 40px;
-    font-size: 1.2rem;
+    width: 7.5vw;
+    height: 3.2vw;
+    font-size: 1.5vw;
     font-family: $font-roboto;
     &:active {
         transform: scale(0.94);
@@ -39,7 +39,20 @@ button {
 
 
 a {
-    color: cornflowerblue;
+    color: #1a73e8;
+}
+
+
+input {
+    font-size: 0.8rem;
+    border-radius: 6px;
+    width: 240px;
+    height: 30px;
+    border: none;
+    font-family: $font-noto;
+    &:focus {
+        outline: none;
+    }
 }
 
 
@@ -48,9 +61,15 @@ a {
 }
 
 
-
 .blur {
+    transition: 0.3s;
     filter: blur(10px);
+}
+
+
+.notblur {
+    transition: 0.3s;
+    filter: blur(0);
 }
 
 
@@ -68,8 +87,8 @@ a {
         .left {
             color: black;
             font-family: $font-questrial;
-            font-size: 2.8rem;
             h1 {
+                font-size: 2.8vw;
                 cursor: pointer;
             }
             a {
@@ -78,7 +97,6 @@ a {
         }
 
         .right {
-          font-size: 1.2rem;
           display: flex;
           align-items: center;
           gap: 3rem;
@@ -88,6 +106,7 @@ a {
           }
 
           i {
+            font-size: 1.8vw;
             cursor: pointer;
             &:hover {
                 width: auto;
@@ -124,7 +143,7 @@ a {
         .title {
             font-family: $font-questrial;
             margin-bottom: 0.6rem;
-            font-size: 4vw;
+            font-size: 4.2vw;
         }
         
         .title span {
@@ -134,40 +153,76 @@ a {
         }
 
         .desc {
-            font-size: 1.4vw;
+            font-size: 1.8vw;
             margin-bottom: 2.2vw;
         }
 
         .greeting-btn {
             width: 6.5vw;
             height: 3.5vw;
-            font-size: 1.2vw;
+            font-size: 1.4vw;
         }
     }
 }
 
 
-.sign-in {
-    position: relative;
+.login-form {
+    background-color: #89d4cf;
+    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);    
     display: flex;
+    text-align: center;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: yellow;
+    background-color: here;
     width: 45vh;
     height: 70vh;
-    i {
-       top: -3%;
-       font-size: 3.2vw;
-       position: absolute;
-       right: -3%;
-    }
     h1 {
-        color: black;
+        font-size: 2vw;
+        font-family: $font-questrial;
+        font-weight: 700;
+        color: white;
+    }
+    a {
+      font-family: $font-noto;
+      font-size: 1.1vw;  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    button {
+        width: 70%;
+    }
+    .input-layout {
+        display: flex;
+        flex-direction: column;
+        font-size: 1vw;
+        font-family: $font-noto;
+        p {
+            color: white;
+            text-align: left;
+            margin-bottom: 0.2rem;
+        }
+        a {
+            font-size: 1vw;
+            margin-top: 0.5rem;
+            text-align: right;
+        }
+    }
+    p {
+        font-size: 1.2vw;
+        color: white;
+        font-family: $font-noto;
+    }
+    a {
+        margin-left: 0.2rem;
+        font-size: 1.2vw;
     }
 }
 

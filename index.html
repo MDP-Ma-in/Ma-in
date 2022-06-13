@@ -53,25 +53,48 @@
                 <h1 class="title">
                     <span>Look</span>
                     around you.</h1>
-                <p class="desc">We can always meet. If you use <span style="font-family: 'Questrial', sans-serif;">M<span style="color: #1a73e8;">a</span>:in.</span></p>
+                <p class="desc">We can always meet. If you use
+                    <span style="font-family: 'Questrial', sans-serif;">M<span style="color: #1a73e8;">a</span>:in.</span></p>
                 <button class="greeting-btn sign" onclick="modalOnOff();">Try it</button>
             </section>
         </div>
 
-        <form class="sign-in">
-            <div class="close"><i class="fa-solid fa-xmark"></i></div>
-            <h1>Sign:in</h1>
-            <input class="input_form" type="text" autofocus placeholder="username"/>
-            <input class="input_form" type="password" placeholder="password"/>
-            <a href="#">forgot password?</a>        
-            <button type="submit">Login</button>
-        </form>
-        <form class="sign-up hidden">
+        <section class="sign-in hidden">
+            <form class="login-form">
+                <h1>LOG:<span style="color: #1a73e8;">IN</span></h1>
+                <div class="input-layout">
+                    <p>Username</p>
+                    <input
+                    class="input_form"
+                    type="text"
+                    autofocus="autofocus"/>
+                </div>
+                <div class="input-layout">
+                    <p>Password</p>
+                    <input class="input_form" type="password"/>
+                    <a href="#">forgot password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <p>Need an account?<a href="#"> HERE</a></p>
+            </form>
+        </section>
 
-        </form>
+         <section class="sign-up hidden">
+            <form class="regeister-form">
+                <h1>Si<span style="color: #1a73e8;">gn</span>:up</h1>
+                <input
+                    class="input_form"
+                    type="text"
+                    autofocus="autofocus"
+                   />
+                <input class="input_form" type="password"/>
+                <a href="#">forgot password?</a>
+                <button type="submit">Login</button>
+            </form>
+        </section>
 
         <script
             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <script src="./FE/JS/app.js"></script>
+        <script src="./FE/JS/app.js"></script>
     </body>
 </html>
