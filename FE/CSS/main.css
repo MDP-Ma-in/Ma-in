@@ -51,6 +51,10 @@ footer i {
   color: black;
 }
 
+.hidden {
+  display: hidden;
+}
+
 .inmagoLogo {
   cursor: pointer;
   position: absolute;
@@ -66,6 +70,7 @@ a {
 }
 
 .container .bar {
+  z-index: 2;
   position: fixed;
   padding: 1rem 0;
   height: 5vh;
@@ -108,7 +113,17 @@ a {
   cursor: pointer;
 }
 
+.container .bar .right i:hover {
+  width: auto;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50%;
+  background-color: #D3D3D3;
+}
+
 .container .lottie-flying {
+  z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +148,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 3%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
