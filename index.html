@@ -24,7 +24,7 @@
                         <i class="fa-solid fa-moon"></i>
                     </li>
                     <li>
-                        <button class="right-btn sign" onclick="modalOnOff();">Sign in</button>
+                        <button class="right-btn sign" onclick="signInOnOff();">Sign in</button>
                     </li>
                     <li>
                         <i class="fa-solid fa-bars"></i>
@@ -55,12 +55,17 @@
                     around you.</h1>
                 <p class="desc">We can always meet. If you use
                     <span style="font-family: 'Questrial', sans-serif;">M<span style="color: #1a73e8;">a</span>:in.</span></p>
-                <button class="greeting-btn sign" onclick="modalOnOff();">Try it</button>
+                <button class="greeting-btn sign" onclick="signInOnOff();">Try it</button>
             </section>
         </div>
 
         <section class="sign-in hidden">
             <form class="login-form">
+                <div class="traffic-light">
+                    <i style="color:#ff5f57;" class="fa-solid fa-circle" onclick="signInclose();"></i>
+                    <i style="color:#ffbd2e;" class="fa-solid fa-circle"></i>
+                    <i style="color:#28ca42;" class="fa-solid fa-circle"></i>
+                </div>
                 <h1>LOG:<span style="color: #1a73e8;">IN</span></h1>
                 <div class="input-layout">
                     <p>Username</p>
@@ -75,21 +80,64 @@
                     <a href="#">forgot password?</a>
                 </div>
                 <button type="submit">Login</button>
-                <p>Need an account?<a href="#"> here!</a></p>
+                <p>Need an account?<a href="#" class="sign-up-a" onclick="signUpOnOff();">here!</a></p>
             </form>
         </section>
 
          <section class="sign-up hidden">
             <form class="regeister-form">
-                <h1>Si<span style="color: #1a73e8;">gn</span>:up</h1>
-                <input
+                <div class="traffic-light">
+                    <i style="color:#ff5f57;" onclick="signUpclose();" class="fa-solid fa-circle"></i>
+                    <i style="color:#ffbd2e;" class="fa-solid fa-circle"></i>
+                    <i style="color:#28ca42;" class="fa-solid fa-circle"></i>
+                </div>
+                <h1>Create Accou<span style="color: #1a73e8;">nt</span></h1>
+                <div class="flex-input-layout">
+                    <div class="input-layout">
+                        <p>First name</p>
+                        <input
+                        class="input_form"
+                        type="text"
+                        autofocus="autofocus"/>
+                    </div>
+                    <div class="input-layout">
+                        <p>Last name</p>
+                        <input class="input_form" type="text"/>
+                    </div>
+                </div>
+                <div class="input-layout">
+                    <p>Username</p>
+                    <input
                     class="input_form"
                     type="text"
-                    autofocus="autofocus"
-                   />
-                <input class="input_form" type="password"/>
-                <a href="#">forgot password?</a>
-                <button type="submit">Login</button>
+                    autofocus="autofocus"/>
+                </div>
+                <div class="input-layout">
+                    <p>Password</p>
+                    <input class="input_form" type="password"/>
+                </div>
+                <div class="input-layout">
+                    <p>Confirm passowrd</p>
+                    <input class="input_form" type="password"/>
+                </div>
+                <div class="flex-input-layout">
+                    <div class="input-layout">
+                        <p>Grade</p>
+                        <input
+                        class="input_form"
+                        type="text"
+                        autofocus="autofocus"/>
+                    </div>
+                    <div class="input-layout">
+                        <p>Class</p>
+                        <input class="input_form" type="text"/>
+                    </div>
+                    <div class="input-layout">
+                        <p>Number</p>
+                        <input class="input_form" type="text"/>
+                    </div>
+                </div>
+                <button type="submit">Sign up</button>
             </form>
         </section>
 
