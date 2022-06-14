@@ -45,10 +45,11 @@ a {
 
 input {
     font-size: 0.8rem;
-    border-radius: 6px;
-    width: 240px;
+    width: 300px;
     height: 30px;
+    background-color: transparent;
     border: none;
+    border-bottom: 2px solid #1a73e8;
     font-family: $font-noto;
     &:focus {
         outline: none;
@@ -167,15 +168,15 @@ input {
 
 
 .login-form {
-    background-color: #89d4cf;
-    background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);    
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
     text-align: center;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    gap: 1rem;
+    gap: 1.8vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -184,10 +185,11 @@ input {
     width: 45vh;
     height: 70vh;
     h1 {
-        font-size: 2vw;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
         font-family: $font-questrial;
         font-weight: 700;
-        color: white;
+        color: black;
     }
     a {
       font-family: $font-noto;
@@ -197,32 +199,34 @@ input {
       }
     }
     button {
-        width: 70%;
+        height: 3.5vh;
+        font-size: 1rem;
+        width: 75%;
     }
     .input-layout {
         display: flex;
         flex-direction: column;
-        font-size: 1vw;
         font-family: $font-noto;
         p {
-            color: white;
+            font-size: 0.8rem;
+            color: black;
             text-align: left;
             margin-bottom: 0.2rem;
         }
         a {
-            font-size: 1vw;
+            font-size: 0.9rem;
             margin-top: 0.5rem;
             text-align: right;
         }
     }
     p {
-        font-size: 1.2vw;
-        color: white;
+        font-size: 0.9rem;
+        color: black;
         font-family: $font-noto;
     }
     a {
         margin-left: 0.2rem;
-        font-size: 1.2vw;
+        font-size: 0.8rem;
     }
 }
 
