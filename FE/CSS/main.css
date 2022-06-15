@@ -310,7 +310,7 @@ input:focus {
           transform: translate(-50%, -50%);
   background-color: here;
   width: 425px;
-  height: 650px;
+  height: 600px;
 }
 
 .regeister-form h1 {
@@ -331,10 +331,10 @@ input:focus {
 }
 
 .regeister-form button {
-  height: 3.5vh;
+  margin-top: 0.5rem;
+  height: 40px;
   font-size: 1rem;
   width: 75%;
-  margin-top: 2rem;
 }
 
 .regeister-form .input-layout {
@@ -376,6 +376,10 @@ input:focus {
 
 .regeister-form .flex-input-layout .input-layout input {
   width: 65px;
+}
+
+.login-form, .regeister-form {
+  z-index: 4;
 }
 
 @-webkit-keyframes motion {

@@ -268,7 +268,7 @@ input {
     transform: translate(-50%,-50%);
     background-color: here;
     width: 425px;
-    height: 650px;
+    height: 600px;
 
     h1 {
         font-size: 2.2rem;
@@ -281,16 +281,17 @@ input {
     a {
       font-family: $font-noto;
       font-size: 1.1vw;  
+
       &:hover {
         text-decoration: underline;
       }
     }
 
-    button {
-        height: 3.5vh;
+   button {
+        margin-top: 0.5rem;
+        height: 40px;
         font-size: 1rem;
         width: 75%;
-        margin-top: 2rem;
     }
 
     .input-layout {
@@ -327,6 +328,13 @@ input {
         }
     }
 }
+
+
+.login-form , .regeister-form {
+    z-index: 4;
+}
+
+
 
 @keyframes motion {
 	0% , 100% {
