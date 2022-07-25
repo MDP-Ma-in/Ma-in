@@ -2,7 +2,6 @@ import React , {} from 'react'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Auth from './Auth/Auth';
 import Home from './Home/Home';
-import Nav from './Nav/Nav';
 
 
 const Router = () => {
