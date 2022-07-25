@@ -12,6 +12,9 @@
   height: 75px;
   border-bottom: 2px solid black;
 }
+.nav-container a {
+  text-decoration: none;
+}
 .nav-container .nav-logo {
   font-family: "Square Peg", cursive;
   cursor: pointer;

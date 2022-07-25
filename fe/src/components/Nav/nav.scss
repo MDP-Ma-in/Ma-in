@@ -16,6 +16,10 @@ $font-rubik:'Rubik', sans-serif;
     height: 75px;
     border-bottom: 2px solid black;
 
+    a {
+        text-decoration: none;
+    }
+
     .nav-logo {
         font-family: $font-jung;
         cursor: pointer;

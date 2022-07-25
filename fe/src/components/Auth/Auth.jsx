@@ -1,10 +1,14 @@
 import React from 'react'
 import './auth.css'
 import Animation from './../Lottie/Animation';
+import Nav from '../Nav/Nav';
+import './shift'
 
 const Auth = () => {
     
     return (
+      <>
+      <Nav/>
         <div className="auth-container">
             <div className="auth-form">
                 <div className="shift"><Animation/></div>
@@ -55,6 +59,7 @@ const Auth = () => {
                 </form>
             </div>
         </div>
+        </>
     )
 }
 
