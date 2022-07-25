@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+$font-jung:'Square Peg', cursive;
+$font-rubik:'Rubik', sans-serif;
+
+.nav-container {
+    align-items: center;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    background-color: transparent;
+    width: 95vw;
+    height: 75px;
+    border-bottom: 2px solid black;
+
+    .nav-logo {
+        font-family: $font-jung;
+        cursor: pointer;
+        font-size: 4.2rem;
+    }
+
+    .nav-menus {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        margin-right: 2rem;
+
+        .fi {
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                transform: rotate(15deg);
+            }
+        }
+
+        .ai {
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                transform: rotate(15deg);
+            }
+        }
+    }
+}
+
+.main-footer {
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+    span {
+        font-family: $font-rubik;
+        font-size: 1.15rem;
+    }
+}
+
+
+

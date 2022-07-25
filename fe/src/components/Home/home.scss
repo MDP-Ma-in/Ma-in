@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&family=Poor+Story&display=swap');
+
+$font-hahmlet: 'Hahmlet', serif;
+$font-poor: 'Poor Story', cursive;
+
+
+.home-container {
+    background-color: rgb(240, 249, 255);
+    width: 100vw;
+    height: 100vh;
+
+    .home-box {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        button {
+            cursor: pointer;
+            filter: opacity(0%);
+            background-color: transparent;
+            width: 150px;
+            height: 50px;
+            font-size: 1.2rem;
+            font-family: $font-hahmlet;
+            animation: btnOpacityAnimation 0.5s ease-in-out;
+            animation-delay: 5.5s;
+            animation-fill-mode: forwards;
+            transition: 0.7s;
+            &:hover {
+                border: 1px solid white;
+                color: white;
+                background-color: #83CAF6;
+            }
+            &:active {
+                transform: scale(0.92);
+            }
+        }
+    }
+
+    .text-box {
+        text-align: center;
+        span {
+            font-family: $font-hahmlet;
+            margin-top: 0.3rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .location {
+        filter: opacity(0);
+        color: #333;
+        position: absolute;
+        bottom: 20%;
+        transform: rotate(90deg);
+        left: -5%;
+        animation: 2s ease-in-out locationOpacityAnimation;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+        transition: 0.3s;
+
+        h1 {
+            font-size: 7rem;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+@keyframes btnOpacityAnimation {
+    from {
+        filter: opacity(0%);
+    }
+    to {
+        filter: opacity(100%);
+    }
+}
+
+@keyframes locationOpacityAnimation  {
+    from {
+        bottom: 5%;
+        filter: opacity(0%);
+    }
+    to {
+        bottom: 20%;
+        filter: opacity(80%);
+    }
+}

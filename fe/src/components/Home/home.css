@@ -1,1 +1,105 @@
-/*# sourceMappingURL=home.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&family=Poor+Story&display=swap");
+.home-container {
+  background-color: rgb(240, 249, 255);
+  width: 100vw;
+  height: 100vh;
+}
+.home-container .home-box {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-container .home-box button {
+  cursor: pointer;
+  filter: opacity(0%);
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-family: "Hahmlet", serif;
+  -webkit-animation: btnOpacityAnimation 0.5s ease-in-out;
+          animation: btnOpacityAnimation 0.5s ease-in-out;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: 0.7s;
+}
+.home-container .home-box button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #83CAF6;
+}
+.home-container .home-box button:active {
+  transform: scale(0.92);
+}
+.home-container .text-box {
+  text-align: center;
+}
+.home-container .text-box span {
+  font-family: "Hahmlet", serif;
+  margin-top: 0.3rem;
+  font-size: 1.4rem;
+}
+.home-container .location {
+  filter: opacity(0);
+  color: #333;
+  position: absolute;
+  bottom: 20%;
+  transform: rotate(90deg);
+  left: -5%;
+  -webkit-animation: 2s ease-in-out locationOpacityAnimation;
+          animation: 2s ease-in-out locationOpacityAnimation;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: 0.3s;
+}
+.home-container .location h1 {
+  font-size: 7rem;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes btnOpacityAnimation {
+  from {
+    filter: opacity(0%);
+  }
+  to {
+    filter: opacity(100%);
+  }
+}
+
+@keyframes btnOpacityAnimation {
+  from {
+    filter: opacity(0%);
+  }
+  to {
+    filter: opacity(100%);
+  }
+}
+@-webkit-keyframes locationOpacityAnimation {
+  from {
+    bottom: 5%;
+    filter: opacity(0%);
+  }
+  to {
+    bottom: 20%;
+    filter: opacity(80%);
+  }
+}
+@keyframes locationOpacityAnimation {
+  from {
+    bottom: 5%;
+    filter: opacity(0%);
+  }
+  to {
+    bottom: 20%;
+    filter: opacity(80%);
+  }
+}/*# sourceMappingURL=home.css.map */
