@@ -7,6 +7,7 @@ const Auth = () => {
       <div className="auth-form">
       <div className="shift"></div>
         <form className="sign-up">
+          <div className="sign-up-wrapper"></div>
           <input type="text" />
         </form>
         <form className="sign-in">
