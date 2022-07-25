@@ -1,9 +1,13 @@
 import React from 'react'
 import './home.css'
+import {AiOutlineFullscreen} from 'react-icons/ai'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='home-container'>
+    
+    <AiOutlineFullscreen/>
+    </div>
   )
 }
 
