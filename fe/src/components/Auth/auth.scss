@@ -70,7 +70,8 @@ $font-mukta : 'Mukta', sans-serif;
 
             .sign-in-wrapper {
                 position: relative;
-                top: 12.5%;
+                top: 50%;
+                transform: translateY(-50%);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
