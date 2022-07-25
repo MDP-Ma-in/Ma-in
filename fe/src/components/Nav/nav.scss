@@ -20,6 +20,10 @@ $font-rubik:'Rubik', sans-serif;
         font-family: $font-jung;
         cursor: pointer;
         font-size: 4.2rem;
+        transition: color 0.7s;
+        &:hover {
+           color: #83CAF6; 
+        }
     }
 
     .nav-menus {

@@ -2,6 +2,8 @@ import React from 'react'
 import './nav.css'
 import {AiOutlineFullscreen} from 'react-icons/ai'
 import {FiUser} from 'react-icons/fi'
+import { Link } from 'react-router-dom';
+
 
 const Nav = () => {
     function toggleFullScreen() {
@@ -18,7 +20,7 @@ const Nav = () => {
     <nav className='nav-container'>
         <h1 className='nav-logo' title='홈 화면으로'>#</h1>
         <div className="nav-menus">
-        <FiUser size={24} className='fi'/>
+        <Link to="/login"><FiUser size={24} className='fi'/></Link>
         <AiOutlineFullscreen size={25} className='ai' onClick={toggleFullScreen} title='전체화면 전환'/>
         </div>
     </nav>

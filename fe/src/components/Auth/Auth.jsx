@@ -3,7 +3,9 @@ import './auth.css'
 
 const Auth = () => {
   return (
-    <div>Auth</div>
+    <div className="auth-container">
+      
+    </div>
   )
 }
 

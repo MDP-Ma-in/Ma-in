@@ -16,6 +16,10 @@
   font-family: "Square Peg", cursive;
   cursor: pointer;
   font-size: 4.2rem;
+  transition: color 0.7s;
+}
+.nav-container .nav-logo:hover {
+  color: #83CAF6;
 }
 .nav-container .nav-menus {
   display: flex;

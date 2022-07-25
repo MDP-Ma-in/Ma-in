@@ -1,10 +1,14 @@
 import React from 'react'
 import './home.css'
 import TypeIt from "typeit-react";
+import Nav from './../Nav/Nav';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
   return (
+    <>
+      <Nav/>
     <div className='home-container'>
     <div className="home-box">
     <div className="text-box">
@@ -14,13 +18,14 @@ const Home = () => {
           speed:70,
           waitUntilVisible: true,
         }}></TypeIt></div>
-        <button>확인하기</button>
+        <Link to="/login"><button>확인하기</button></Link>
     </div>
       
       <div className="location">
         <h1>HOME</h1>
       </div>
     </div>
+    </>
   )
 }
 

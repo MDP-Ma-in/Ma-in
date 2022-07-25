@@ -8,7 +8,6 @@ import Nav from './Nav/Nav';
 const Router = () => {
   return (
     <BrowserRouter>
-    <Nav/>
     <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/login' element={<Auth/>}/>
