@@ -20,7 +20,7 @@ const Nav = () => {
     <nav className='nav-container'>
     <Link to="/"><h1 className='nav-logo' title='홈 화면으로'>#</h1></Link>
         <div className="nav-menus">
-        <Link to="/auth"><FiUser size={24} className='fi'/></Link>
+        <Link to="/sign-in"><FiUser size={24} className='fi'/></Link>
         <AiOutlineFullscreen size={25} className='ai' onClick={toggleFullScreen} title='전체화면 전환'/>
         </div>
     </nav>

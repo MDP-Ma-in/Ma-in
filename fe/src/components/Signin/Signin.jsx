@@ -8,7 +8,13 @@ const Signin = () => {
       <>
       <Nav/>
       <div className="sign-in-container">
-        
+            <div className="sign-in-box">
+                <div className="lottie-animation"><Animation/></div>
+                <div className="sign-in"></div>
+                <h1>Sign in to Ma:in</h1>
+                <input type="text" />
+                <input type="password"/>
+            </div>
       </div>
       </>
     )

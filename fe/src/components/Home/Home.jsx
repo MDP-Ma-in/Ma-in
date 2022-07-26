@@ -18,7 +18,7 @@ const Home = () => {
           speed:70,
           waitUntilVisible: true,
         }}></TypeIt></div>
-        <Link to="/auth"><button>확인하기</button></Link>
+        <Link to="/sign-in"><button>확인하기</button></Link>
     </div>
       
       <div className="location">
